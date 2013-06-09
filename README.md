@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
@@ -270,3 +271,9 @@ you will need to set the "BOXEN_GITHUB_ENTERPRISE_URL" and
 See [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md).
 
 Use Issues or #boxen on irc.freenode.net.
+=======
+Bootstrapping
+=============
+
+my boxen bootstrap
+>>>>>>> 2b2129f6d0dd2626f4db818f9dcb66f1be859fd2
