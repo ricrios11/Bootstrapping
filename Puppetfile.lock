@@ -1,12 +1,52 @@
 GITHUBTARBALL
+  remote: boxen/puppet-adium
+  specs:
+    adium (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-alfred
+  specs:
+    alfred (1.1.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-appcleaner
+  specs:
+    appcleaner (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-better_touch_tools
+  specs:
+    better_touch_tools (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (2.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-chrome
+  specs:
+    chrome (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-codekit
+  specs:
+    codekit (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -19,6 +59,21 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-gitx
+  specs:
+    gitx (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.1.2)
@@ -27,6 +82,21 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-imageoptim
+  specs:
+    imageoptim (0.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-istatmenus4
+  specs:
+    istatmenus4 (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -39,6 +109,16 @@ GITHUBTARBALL
     nodejs (2.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-onepassword
+  specs:
+    onepassword (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-rdio
+  specs:
+    rdio (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.0.2)
@@ -49,9 +129,44 @@ GITHUBTARBALL
     ruby (4.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sequel_pro
+  specs:
+    sequel_pro (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-transmission
+  specs:
+    transmission (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-transmit
+  specs:
+    transmit (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-tunnelblick
+  specs:
+    tunnelblick (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.1)
 
 GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
@@ -59,22 +174,57 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: newtriks/puppet-charles
+  specs:
+    charles (1.0.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.0.2)
 
+GITHUBTARBALL
+  remote: slantview/puppet-sublime_text
+  specs:
+    sublime_text (1.2.1)
+
 DEPENDENCIES
+  adium (= 1.1.1)
+  alfred (= 1.1.1)
+  appcleaner (= 1.0.0)
+  better_touch_tools (= 1.0.0)
   boxen (= 2.1.0)
+  charles (= 1.0.2)
+  chrome (= 1.1.0)
+  codekit (= 1.0.1)
   dnsmasq (= 1.0.0)
+  dropbox (= 1.1.0)
+  firefox (= 1.1.0)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  github_for_mac (= 1.0.1)
+  gitx (= 1.2.0)
+  handbrake (= 1.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
+  imageoptim (= 0.0.2)
   inifile (= 0.9.0)
+  istatmenus4 (= 1.0.0)
+  iterm2 (= 1.0.2)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
+  onepassword (= 1.0.1)
+  rdio (= 1.0.0)
   repository (= 2.0.2)
   ruby (= 4.1.0)
+  sequel_pro (= 1.0.0)
   stdlib (= 4.0.2)
+  sublime_text (= 1.2.1)
   sudo (= 1.0.0)
+  transmission (= 1.0.0)
+  transmit (= 1.0.0)
+  tunnelblick (= 1.0.0)
+  vagrant (= 2.0.7)
+  virtualbox (= 1.0.3)
+  vlc (= 1.0.1)
 
