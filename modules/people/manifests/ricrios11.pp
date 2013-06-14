@@ -26,6 +26,8 @@ class people::ricrios11 {
     include wget
     include autoconf
     include libtool
+    include pkgconfig
+    include pcre
     include php::5_4
  
     # Machine-specific apps

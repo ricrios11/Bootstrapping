@@ -14,6 +14,11 @@ GITHUBTARBALL
     appcleaner (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-better_touch_tools
   specs:
     better_touch_tools (1.0.0)
@@ -97,6 +102,11 @@ GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
     iterm2 (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -202,6 +212,7 @@ DEPENDENCIES
   adium (= 1.1.1)
   alfred (= 1.1.1)
   appcleaner (= 1.0.0)
+  autoconf (= 1.0.0)
   better_touch_tools (= 1.0.0)
   boxen (= 2.1.0)
   charles (= 1.0.2)
@@ -221,6 +232,7 @@ DEPENDENCIES
   inifile (= 0.9.0)
   istatmenus4 (= 1.0.0)
   iterm2 (= 1.0.2)
+  libtool (= 1.0.0)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
   onepassword (= 1.0.1)
