@@ -24,6 +24,8 @@ class people::ricrios11 {
     include virtualbox
     include vlc
     include wget
+    include autoconf
+    include libtool
     include php::5_4
  
     # Machine-specific apps
