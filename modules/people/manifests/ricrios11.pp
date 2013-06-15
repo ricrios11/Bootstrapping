@@ -29,8 +29,7 @@ class people::ricrios11 {
     include pkgconfig
     include pcre
     include php::5_4
-    include nodejs::v0_10
-    include nodejs::v0_8_8
+    include caffeine
  
     # Machine-specific apps
     case $::hostname {
@@ -111,14 +110,6 @@ class people::ricrios11 {
     require     => File["${nginx::config::sitesdir}/${name}.conf"],
     }
 
-    # install any arbitrary nodejs version
-    nodejs { 'v0.10.1': }
-
-    # install some npm modules
-    nodejs::module { 'bower':
-    node_version => 'v0.10'
-    }
-
     repository {
     '/path/to/code':
     source   => 'user/repo', #short hand for github repos
@@ -127,5 +118,5 @@ class people::ricrios11 {
     source   => 'git://github.com/wfarr/.emacs.d.git',
     path     => '/etc/emacs.d',
     provider => 'git',
-}
+    }
 }
