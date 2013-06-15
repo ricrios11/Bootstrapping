@@ -73,21 +73,28 @@ class people::ricrios11 {
       node_version => 'v0.10'
     }
 
-        # Install a php version and set as the global default php
+    # Install php 5.4
+    include php::5_4
+
+    # Install a couple of specific minor versions
+    include php::5_3_17
+    include php::5_4_11
+
+    # Install a php version and set as the global default php
     class { 'php::global':
-    version => '5.4.10'
+      version => '5.4.10'
     }
 
     # Ensure a specific php version is used within a directory
     php::local { '/path/to/my/awesome/project':
-    version => '5.4.9'
+      version => '5.4.9'
     }
 
     # Ensure an extension is installed for a certain php version
     # note, you can't have duplicate resource names so you have to name like so
     php::extension::apc { "apc for ${version}":
-    php     => $version,
-    version => '3.1.13', # Optionally specify the extension version
+      php     => $version,
+      version => '3.1.13', # Optionally specify the extension version
     }
 
     # Set up PHP-FPM as a service running a specific version of PHP
@@ -105,9 +112,9 @@ class people::ricrios11 {
     $name = "project-name"
     $version = "5.4.10"
     php::fpm::pool { "${name}-${version}":
-    version     => $version,
-    socket_path => "${boxen::config::socketdir}/${name}",
-    require     => File["${nginx::config::sitesdir}/${name}.conf"],
+      version     => $version,
+      socket_path => "${boxen::config::socketdir}/${name}",
+      require     => File["${nginx::config::sitesdir}/${name}.conf"],
     }
 
     repository {
