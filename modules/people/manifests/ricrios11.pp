@@ -116,7 +116,7 @@ class people::ricrios11 {
           # version     => $version,
           # socket_path => "${boxen::config::socketdir}/${name}",
           # require     => File["${nginx::config::sitesdir}/${name}.conf"],
-    }
+        # }
 
     repository {
     '/path/to/code':
