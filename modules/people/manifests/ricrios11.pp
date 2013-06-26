@@ -74,35 +74,35 @@ class people::ricrios11 {
     }
 
     # Install php 5.4
-    include php::5_4
+        # include php::5_4
 
     # Install a couple of specific minor versions
-    include php::5_3_17
-    include php::5_4_11
+        # include php::5_3_17
+        # include php::5_4_11
 
     # Install a php version and set as the global default php
-    class { 'php::global':
-      version => '5.4.10'
-    }
+        # class { 'php::global':
+          # version => '5.4.10'
+        # }
 
     # Ensure a specific php version is used within a directory
-    php::local { '/path/to/my/awesome/project':
-      version => '5.4.9'
-    }
+        # php::local { '/path/to/my/awesome/project':
+          # version => '5.4.9'
+        # }
 
     # Ensure an extension is installed for a certain php version
     # note, you can't have duplicate resource names so you have to name like so
-    php::extension::apc { "apc for ${version}":
-      php     => $version,
-      version => '3.1.13', # Optionally specify the extension version
-    }
+        # php::extension::apc { "apc for ${version}":
+          # php     => $version,
+          # version => '3.1.13', # Optionally specify the extension version
+        # }
 
     # Set up PHP-FPM as a service running a specific version of PHP
-    include php::fpm::5_3_15
+        # include php::fpm::5_3_15
 
     # Run multiple PHP-FPM services
-    include php::fpm::5_4_11
-    include php::fpm::5_3_23
+        # include php::fpm::5_4_11
+        # include php::fpm::5_3_23
 
     # Spin up a PHP-FPM pool for a project
     # Ensures:
@@ -118,13 +118,13 @@ class people::ricrios11 {
           # require     => File["${nginx::config::sitesdir}/${name}.conf"],
         # }
 
-    repository {
-    '/path/to/code':
-    source   => 'user/repo', #short hand for github repos
-    provider => 'git';
-    'my emacs config':
-    source   => 'git://github.com/wfarr/.emacs.d.git',
-    path     => '/etc/emacs.d',
-    provider => 'git',
-    }
+        # repository {
+        # '/path/to/code':
+        # source   => 'user/repo', #short hand for github repos
+        # provider => 'git';
+        # 'my emacs config':
+        # source   => 'git://github.com/wfarr/.emacs.d.git',
+        # path     => '/etc/emacs.d',
+        # provider => 'git',
+        # }
 }
