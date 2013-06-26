@@ -109,12 +109,13 @@ class people::ricrios11 {
     #  * the version of PHP is installed
     #  * a PHP-FPM service is configured for this PHP version
     #  * a FPM pool is listening on a per project nginx socket
-    $name = "project-name"
-    $version = "5.4.10"
-    php::fpm::pool { "${name}-${version}":
-      version     => $version,
-      socket_path => "${boxen::config::socketdir}/${name}",
-      require     => File["${nginx::config::sitesdir}/${name}.conf"],
+    
+        # $name = "project-name"
+        # $version = "5.4.10"
+        # php::fpm::pool { "${name}-${version}":
+          # version     => $version,
+          # socket_path => "${boxen::config::socketdir}/${name}",
+          # require     => File["${nginx::config::sitesdir}/${name}.conf"],
     }
 
     repository {
