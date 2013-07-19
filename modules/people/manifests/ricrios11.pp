@@ -29,7 +29,6 @@ class people::ricrios11 {
     include pcre
     include caffeine
     include sublime_text_2
-    include evernote
     include php::5_4
     include php::5_3_17
     include php::5_4_11
