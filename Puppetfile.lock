@@ -218,11 +218,6 @@ GITHUBTARBALL
   specs:
     stdlib (4.0.2)
 
-GITHUBTARBALL
-  remote: slantview/puppet-sublime_text
-  specs:
-    sublime_text (1.2.1)
-
 DEPENDENCIES
   adium (= 1.1.1)
   alfred (= 1.1.1)
@@ -259,7 +254,6 @@ DEPENDENCIES
   ruby (= 4.1.0)
   sequel_pro (= 1.0.0)
   stdlib (= 4.0.2)
-  sublime_text (= 1.2.1)
   sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
   transmission (= 1.0.0)
