@@ -16,7 +16,6 @@ class people::ricrios11 {
     include iterm2::dev
     include rdio
     include sequel_pro
-    include sublime_text
     include transmit
     include tunnelblick
     include vagrant
