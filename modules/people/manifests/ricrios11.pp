@@ -89,7 +89,7 @@ class people::ricrios11 {
     # Ensure a specific php version is used within a directory
     # php::local { '/path/to/my/awesome/project':
     # version => '5.4.9'
-    }
+    # }
 
     # Ensure an extension is installed for a certain php version
     # note, you can't have duplicate resource names so you have to name like so
