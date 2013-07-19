@@ -87,8 +87,8 @@ class people::ricrios11 {
     }
 
     # Ensure a specific php version is used within a directory
-    php::local { '/path/to/my/awesome/project':
-    version => '5.4.9'
+    # php::local { '/path/to/my/awesome/project':
+    # version => '5.4.9'
     }
 
     # Ensure an extension is installed for a certain php version
