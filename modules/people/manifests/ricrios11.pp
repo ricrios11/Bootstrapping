@@ -89,30 +89,5 @@ class people::ricrios11 {
     version => '5.4.9'
     }
 
-    # Ensure an extension is installed for a certain php version
-    # note, you can't have duplicate resource names so you have to name like so
-    php::extension::apc { "apc for ${version}":
-    php     => $version,
-    version => '3.1.13', # Optionally specify the extension version
-    }
 
-    # Set up PHP-FPM as a service running a specific version of PHP
-    include php::fpm::5_3_15
-
-    # Run multiple PHP-FPM services
-    include php::fpm::5_4_11
-    include php::fpm::5_3_23
-
-    # Spin up a PHP-FPM pool for a project
-    # Ensures:
-    #  * the version of PHP is installed
-    #  * a PHP-FPM service is configured for this PHP version
-    #  * a FPM pool is listening on a per project nginx socket
-    $name = "project-name"
-    $version = "5.4.10"
-    php::fpm::pool { "${name}-${version}":
-    version     => $version,
-    socket_path => "${boxen::config::socketdir}/${name}",
-    require     => File["${nginx::config::sitesdir}/${name}.conf"],
-    }
 }
